@@ -1,0 +1,147 @@
+body{
+    margin:0;
+  }
+  
+#background{
+    background-image: url(https://w0.peakpx.com/wallpaper/290/679/HD-wallpaper-harry-potter-harry-potter-and-the-chamber-of-secrets-hogwarts-castle.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: relative;
+  
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+#overlay{
+    background-color: rgba(0, 0, 0, .3);
+    position:absolute;
+    top:0;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+}
+
+header nav{
+    position:absolute;
+    top:0;
+    right:0;
+   
+    padding: 25px;
+    font-size: 16px;
+}
+   
+#links a{
+     color:ghostwhite;
+   
+     font-family: 'Open Sans', sans-serif;
+     letter-spacing: 1px;
+     text-decoration: none;
+     padding: 2px;
+     font-style: normal;
+}
+   
+#links a:hover{
+     color:azure;
+     text-decoration: underline;
+}
+
+#search_content{
+    z-index: 1;
+}
+
+#search_content div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+   
+#sigla{
+     max-width: 780px;
+     font-size: 40px;
+     font-style: normal;
+     font-family: 'Open Sans', sans-serif;
+     color: whitesmoke;
+     font-weight: lighter;
+}
+
+.submit{
+    border: white solid 1px;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+
+#arrow {
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+#arrow.hidden {
+	display: none; 
+}
+
+#page-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: beige;
+}
+  
+#page-view .page{
+    margin: 10px;
+    border: 1px solid slategray;
+    padding: 10px; 
+    width: 320px;
+    height: 400px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    cursor: pointer;
+    background-color: black; 
+}
+
+  
+#page-view .page:hover{
+      background-color: darkgray;
+}
+  
+#page-view img{
+      width: 100%;
+      max-height: 80%;
+}
+  
+#page-view h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: whitesmoke;
+}
+
+#modale.hidden {
+	display: none; 
+}
+
+#modale {
+	position: fixed;
+	top: -20;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center; 
+}
+
+#modale img {
+	height: 50%;
+	border: 1px solid black;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
